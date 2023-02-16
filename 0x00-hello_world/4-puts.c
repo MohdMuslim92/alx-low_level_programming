@@ -5,6 +5,6 @@
 /* return : 0 if successfull or 1 if there is an error */
 int main(void)
 {/* main : starting the program */
-	puts("\"Programming is like building a multilingual puzzle\n");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
