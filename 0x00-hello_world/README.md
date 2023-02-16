@@ -5,3 +5,4 @@
 * 3-name : take the file stored in the variable CFILE and gereate an executable c file
 * 4-puts.c : print a string with puts function
 * 5-printf.c : print a string with printf function
+* 6-size.c : print sizes of variables
