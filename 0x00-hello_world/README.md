@@ -4,3 +4,4 @@
 * 2-assembler : take the file stored in the variable CFILE and generate assimbly file; do not link. and save the result into .s file
 * 3-name : take the file stored in the variable CFILE and gereate an executable c file
 * 4-puts.c : print a string with puts function
+* 5-printf.c : print a string with printf function
