@@ -9,3 +9,4 @@
 * 7-print_tebahpla.c : print all small alphabet in reverse with a for loop using putchar()
 * 8-print_base16.c : print all the numbers in base 16 in lower case using putchar()
 * 9-print_comb.c : print all possible numbers from one digit seperated by comma and space
+* 100-print_comb3.c : prints all possible different combinations of two digits while the number's mirrpr is not allowed (ex. 01 -->10)
