@@ -8,3 +8,4 @@
 * 6-print_numberz.c : print numbers from 0 to 9 with a for loop using putchar()
 * 7-print_tebahpla.c : print all small alphabet in reverse with a for loop using putchar()
 * 8-print_base16.c : print all the numbers in base 16 in lower case using putchar()
+* 9-print_comb.c : print all possible numbers from one digit seperated by comma and space
