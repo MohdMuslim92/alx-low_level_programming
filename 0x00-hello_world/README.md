@@ -7,3 +7,4 @@
 * 5-printf.c : print a string with printf function
 * 6-size.c : print sizes of variables
 * 100-intel : take the file stored in the variable CFILE and generate assimbly file; do not link. and save the result into .s file
+* 101-quote.c : print a string without printf or puts
