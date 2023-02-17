@@ -3,3 +3,4 @@
 * 1-last_digit.c : get the last digit of a random number and compare if it's less or greater than 5 of equal to zero
 * 2-print_alphabet.c : print all small alphabet with a for loop using putchar()
 * 3-print_alphabets.c : print all alphabet small and capital using a for loop with putchar()
+* 4-print_alphabt.c : print all small alphabet except e and q with a for loop using putchar()
