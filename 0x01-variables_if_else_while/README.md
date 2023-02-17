@@ -5,4 +5,5 @@
 * 3-print_alphabets.c : print all alphabet small and capital using a for loop with putchar()
 * 4-print_alphabt.c : print all small alphabet except e and q with a for loop using putchar()
 * 5-print_numbers.c : print numbers from 0 to 9
-* 6-print_numberz.c : print numbers from 0 to 9 with a for loop using putchar
+* 6-print_numberz.c : print numbers from 0 to 9 with a for loop using putchar()
+* 7-print_tebahpla.c : print all small alphabet in reverse with a for loop using putchar()
