@@ -11,3 +11,4 @@
 * 9-print_comb.c : print all possible numbers from one digit seperated by comma and space
 * 100-print_comb3.c : prints all possible different combinations of two digits while the number's mirrpr is not allowed (ex. 01 -->10)
 * 101-print_comb4.c : print all possible different combinations of three digits while repeating is not allowed
+* 102-print_comb5.c : print all possible different combinations of two two digits but it's mirror is not allowed "ex. 00 01 --> 00 10"
