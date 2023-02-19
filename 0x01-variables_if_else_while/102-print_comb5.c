@@ -8,33 +8,23 @@
  */
 int main(void)
 {
-	int n, m, o, p;
+	int m, n;
 
-	for (n = '0'; n <= '9'; n++)
+	for (m = 0; m <= 98; m++)
 	{
-	for (m = '0'; m <= '8'; m++)
-	{
-	for (o = '0'; o <= '9'; o++)
-	{
-	for (p = '1'; p <= '9'; p++)
-	{
-		if (n <= o && m < p)
+		for (n = m + 1; n <= 99; n++)
 		{
-		putchar(n);
-		putchar(m);
-		putchar(' ');
-		putchar(o);
-		putchar(p);
-		if (n != '9' || m != '8')
-		{
-		putchar(',');
-		putchar(' ');
+			putchar((m / 10) + '0');
+			putchar((m % 10) + '0');
+			putchar(' ');
+			putchar((n / 10) + '0');
+			putchar((n % 10) + '0');
+
+			if (m == 98 && n == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
-		}
-	}
-	}
-	}
-	}
-	putchar('\n');
 	return (0);
 }
