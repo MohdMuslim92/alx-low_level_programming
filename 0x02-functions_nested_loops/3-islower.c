@@ -3,8 +3,7 @@
 /**
  * _islower - Entry point
  * _islower:check the character if it's lower or upper case
- * the function take the parameter c
- * c : parameter passed to the function
+ * @c : parameter passed to the function
  * Return: Always 0 (Success)
  */
 int _islower(int c)
