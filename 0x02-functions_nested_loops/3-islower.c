@@ -4,15 +4,15 @@
  * _islower - Entry point
  * _islower:check the character if it's lower or upper case
  * @c : parameter passed to the function
- * Return: Always 0 (Success)
+ * Return: Always 1 (lower case)
  */
 int _islower(int c)
 {
 
 	if (c >= 97 && c <= 122)
 	{
-		_putchar(1);
+		return(1);
 	}
 
-		_putchar(0);
+		return(0);
 }
