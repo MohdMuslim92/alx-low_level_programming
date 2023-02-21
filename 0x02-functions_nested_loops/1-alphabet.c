@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: using a function called print_alphabet to print
+ * print_alphabet - Entry point
+ * print_alphabet: using a function called print_alphabet to print
  * the alphabet letters with the help of function _putchar
  * which is declared in the header main.h
  * Return: Always 0 (Success)
