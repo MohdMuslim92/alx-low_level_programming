@@ -9,9 +9,8 @@
  */
 int main(void)
 {
-	int i, j, k, l, m, n;
+	int i, k, l, m, n;
 
-	j = 1024;
 	k = 0;
 	l = 0;
 	n = 0;
