@@ -9,25 +9,17 @@
  */
 int main(void)
 {
-	int i, k, l, m, n;
+	int i, j = 0;
 
-	k = 0;
-	l = 0;
-	n = 0;
-
-	for (i = 1; i < 1024; i++)
+	while (i < 1024)
 	{
-		if (l < 1024)
+		if ((i % 3 == 0) || (i % 5 == 0))
 		{
-			k = 3 * i;
-			l += k;
+			j += i;
 		}
-		if (n < 1024)
-		{
-			m = 5 * i;
-			n += m;
-		}
+		i++;
 	}
-	printf("%d\n", n + l);
+
+	printf("%d\n", j);
 	return (0);
 }
