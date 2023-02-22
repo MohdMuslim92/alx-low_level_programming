@@ -13,3 +13,4 @@
 * 10-add.c : function to add two numbers to each other
 * 11-print_to_98.c : Print number till 98 starting from the passed number to the function
 * 100-times_table.c : a function that prints an n times table where n equal or greater than 0 and less than 15
+* 101-natural.c : calculate sum of the mulitiples of numbers 3,5 that below 1024
