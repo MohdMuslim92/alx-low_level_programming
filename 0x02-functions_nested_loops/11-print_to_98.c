@@ -4,6 +4,7 @@
 /**
  * print_to_98 - Entry point
  * print_to_98 :print numbers to 98 starting from the passed number
+ * @n : parameter passed to the function
  * Return: Always 0 (Success)
  */
 void print_to_98(int n)
