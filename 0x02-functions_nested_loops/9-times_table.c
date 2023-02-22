@@ -18,18 +18,18 @@ void times_table(void)
 			{
 				l = k % 10;
 				m = (k - l) / 10;
-				_putchar(' ');
+				_putchar(32);
 				_putchar(m + '0');
 				_putchar(l + '0');
 			} else
 			{
-				_putchar(' ');
-				_putchar(' ');
+				_putchar(32);
+				_putchar(32);
 				_putchar(k + '0');
 			}
 			if (j <= 8)
 			{
-				_putchar(',');
+				_putchar(44);
 			}
 		}
 		_putchar('\n');
