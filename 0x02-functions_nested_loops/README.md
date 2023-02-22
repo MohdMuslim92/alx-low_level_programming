@@ -10,3 +10,4 @@
 * 7-print_last_digit.c : return the last digit of a variable
 * 8-24_hours.c : print the minuts of the day
 * 9-times_table.c : a function that prints the 9 times table, starting with 0
+* 10-add.c : function to add two numbers to each other
