@@ -21,15 +21,19 @@ void times_table(void)
 				_putchar(32);
 				_putchar(m + '0');
 				_putchar(l + '0');
+				if (j <= 8)
+				{
+					_putchar(44);
+				}
 			} else
 			{
 				_putchar(32);
 				_putchar(32);
 				_putchar(k + '0');
-			}
-			if (j <= 8)
-			{
+				if (j <= 8)
+				{
 				_putchar(44);
+				}
 			}
 		}
 		_putchar('\n');
