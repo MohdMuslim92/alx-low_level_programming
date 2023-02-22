@@ -11,3 +11,5 @@
 * 8-24_hours.c : print the minuts of the day
 * 9-times_table.c : a function that prints the 9 times table, starting with 0
 * 10-add.c : function to add two numbers to each other
+* 11-print_to_98.c : Print number till 98 starting from the passed number to the function
+* 100-times_table.c : a function that prints an n times table where n equal or greater than 0 and less than 15
