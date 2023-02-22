@@ -3,6 +3,7 @@
 /**
  * print_times_table - Entry point
  * print_times_table :print the table of passed value between 0 and 15
+ * @n : parameter passed to the function
  * Return: Always 0 (Success)
  */
 void print_times_table(int n)
