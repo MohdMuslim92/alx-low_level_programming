@@ -9,3 +9,7 @@
 * 6-print_line.c : function prints a straight line
 * 7-print_diagonal.c : function prints a diagonal line
 * 8-print_square.c : function prints a line of squares (#)
+* 9-fizz_buzz.c : print numbers from 1 to 100 except for :
+any number that divisible by 3 print Fizz
+any number divisible by 5 print Buzz
+any number divisible by both 3 and 5 print FizzBuzz
