@@ -8,3 +8,4 @@
 * 5-more_numbers.c : function prints numbers from 0 to 14 ten times
 * 6-print_line.c : function prints a straight line
 * 7-print_diagonal.c : function prints a diagonal line
+* 8-print_square.c : function prints a line of squares (#)
