@@ -6,3 +6,4 @@
 * 3-print_numbers.c : function to print numbers from 0 to 9 without using standard output functions
 * 4-print_most_numbers.c : function to print numbers from 0 to 9 except 2 and 4 without using standard output functions
 * 5-more_numbers.c : function prints numbers from 0 to 14 ten times
+* 6-print_line.c : function prints a straight line
