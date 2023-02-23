@@ -2,3 +2,4 @@
 
 * 0-isupper.c : function check if the value is upper case (return 1) or not (return0 0)
 * 1-isdigit.c : function check if the value is a number between 0 and 9
+* 2-mul.c : function that multiply two integers
