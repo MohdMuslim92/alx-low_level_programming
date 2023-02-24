@@ -10,7 +10,7 @@
 int main(void)
 {
 	int i = 0;
-	long long j = 0;
+	long j = 0;
 
 	while (i < 4000000)
 	{
@@ -21,7 +21,7 @@ int main(void)
 
 		i++;
 	}
-			printf("%lld", j);
+			printf("%ld", j);
 
 	printf("\n");
 
