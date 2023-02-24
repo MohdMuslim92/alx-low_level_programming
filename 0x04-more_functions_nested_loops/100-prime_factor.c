@@ -4,16 +4,14 @@
 
 /**
  * main - Entry point
- * Description: a program that prints numbers from 1 to 100 except :
- * - numbers divisible by 3 prints Fizz
- * - numbers divisible by 5 prints Buzz
- * - numbers divisible by both 3 and 5 prints FizzBuzz
+ * Description: a program that calculate the prime factor
+ * for the number 612852475143
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 
-		long i =612852475143;
+		long i = 612852475143;
 		double sqri = sqrt(i);
 		long factors, j;
 
