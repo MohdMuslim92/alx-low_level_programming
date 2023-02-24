@@ -9,19 +9,21 @@
  */
 int main(void)
 {
-	int i = 0;
-	long j = 0;
+	long i = 0;
+	long j = 1, k = 2, l;
 
 	while (i < 4000000)
 	{
-		if (i % 2 == 0)
+		k += j;
+		j = k - j;
+		if (k % 2 == 0)
 		{
-			j += i;
+			l += k;
 		}
 
-		i++;
+		++i;
 	}
-			printf("%ld", j);
+	printf(", %ld", l);
 
 	printf("\n");
 
