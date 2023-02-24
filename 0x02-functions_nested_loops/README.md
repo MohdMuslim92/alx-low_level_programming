@@ -16,3 +16,4 @@
 * 101-natural.c : calculate sum of the mulitiples of numbers 3,5 that below 1024
 * 102-fibonacci.c : print the fibonacci sequence which start with 1,2 folowed by adding the last to numbers to get the next number
 * 103 : 103-fibonacci.c : count the sum of even numbers between 0 and 4000000
+* 104-fibonacci.c : Print first 98 fibonacci numbers
