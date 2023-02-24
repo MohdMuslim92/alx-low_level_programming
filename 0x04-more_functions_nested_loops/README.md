@@ -14,4 +14,5 @@ any number that divisible by 3 print Fizz
 any number divisible by 5 print Buzz
 any number divisible by both 3 and 5 print FizzBuzz
 * 10-print_triangle.c : print a triangle
+100-prime_factor.c : program that calculate the prime factor for the number 612852475143
 * 101-print_number.c : function to print number positive or negative without using standard output functions

@@ -14,10 +14,10 @@ int main(void)
 {
 
 		long i =612852475143;
+		double sqri = sqrt(i);
 		long factors, j;
-		double sorting = sqrt(i);
 
-		for (j = 1; j > sorting; j++)
+		for (j = 1; j <= sqri; j++)
 		{
 
 		if (i % j == 0)
