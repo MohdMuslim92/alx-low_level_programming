@@ -13,3 +13,4 @@
 any number that divisible by 3 print Fizz
 any number divisible by 5 print Buzz
 any number divisible by both 3 and 5 print FizzBuzz
+* 10-print_triangle.c : print a triangle
