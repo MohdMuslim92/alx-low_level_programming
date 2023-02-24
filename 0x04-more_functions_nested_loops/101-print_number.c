@@ -11,24 +11,27 @@
  */
 void print_positive(int n)
 {
-	if (n > 9 && n < 100)
+	if (n >= 0)
 	{
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
-	} else if (n > 99 && n < 1000)
-	{
-		_putchar((n / 100) + '0');
-		_putchar((n % 100) / 10 + '0');
-		_putchar((n % 10) + '0');
-	} else if (n > 999 && n < 10000)
-	{
-		_putchar((n / 1000) + '0');
-		_putchar((n / 100) % 10 + '0');
-		_putchar((n % 100) / 10 + '0');
-		_putchar((n % 10) + '0');
-	} else
-	{
-		_putchar(n + '0');
+		if (n > 9 && n < 100)
+		{
+			_putchar((n / 10) + '0');
+			_putchar((n % 10) + '0');
+		} else if (n > 99 && n < 1000)
+		{
+			_putchar((n / 100) + '0');
+			_putchar((n % 100) / 10 + '0');
+			_putchar((n % 10) + '0');
+		} else if (n > 999 && n < 10000)
+		{
+			_putchar((n / 1000) + '0');
+			_putchar((n / 100) % 10 + '0');
+			_putchar((n % 100) / 10 + '0');
+			_putchar((n % 10) + '0');
+		} else
+		{
+			_putchar(n + '0');
+		}
 	}
 }
 
@@ -41,11 +44,9 @@ void print_number(int n)
 		int x = -n;
 		if (x > 9 && x < 100)
 		{
-			_putchar('\n');
 			_putchar('-');
 			_putchar((x / 10) + '0');
 			_putchar((x % 10) + '0');
-			_putchar('\n');
 		} else if (x > 99 && x < 1000)
 		{
 			_putchar('-');

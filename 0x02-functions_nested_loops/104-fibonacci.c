@@ -10,9 +10,9 @@
  */
 int main(void)
 {
-	int i = 0, m = 3;
+	int m = 3;
 
-	long double j = 1, k = 2;
+	long double i = 0, j = 1, k = 2;
 
 	while (i < 1000)
 	{
