@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 /**
  * main - Entry point
@@ -12,19 +13,19 @@
 int main(void)
 {
 
-		int i = 8;
-		int factors;
+		long i =612852475143;
+		long factors, j;
+		double sorting = sqrt(i);
 
-		for (factors = 2; i > 1; factors++)
+		for (j = 1; j > sorting; j++)
 		{
 
-		while (i % factors == 0)
+		if (i % j == 0)
 		{
-			printf("%d\t", factors);
-			i = i / factors;
+			factors = i / j;
 		}
-		printf("\n");
 		}
+		printf("%ld\n", factors);
 		return (0);
 
 }
