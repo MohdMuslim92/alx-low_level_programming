@@ -11,6 +11,7 @@
 int main(void)
 {
 	int i = 0, m = 3;
+
 	long double j = 1, k = 2;
 
 	while (i < 1000)
