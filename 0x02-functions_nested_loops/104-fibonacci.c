@@ -26,7 +26,7 @@ int main(void)
 			if (m < 99)
 			{
 				printf(", %lu", k);
-			}	
+			}
 			m++;
 		}
 
