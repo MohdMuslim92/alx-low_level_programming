@@ -9,23 +9,22 @@
  */
 int main(void)
 {
-	long i = 0;
-	long j = 1, k = 2, l;
+	unsigned long i = 0, j = 1, sum;
+	float total;
 
-	while (i < 4000000)
+	while (1)
 	{
-		k += j;
-		j = k - j;
-		if (k % 2 == 0)
-		{
-			l += k;
-		}
+		sum = i + j;
+		if (sum > 4000000)
+			break;
 
-		++i;
+		if ((sum % 2) == 0)
+			total += sum;
+
+		i = j;
+		j = sum;
 	}
-	printf(", %ld", l);
-
-	printf("\n");
+	printf("%.0f\n", total);
 
 	return (0);
 }
