@@ -6,7 +6,6 @@
  * Description: a program that prints first 98 fibonacci numbers
  * fibonacci starts from 0,1 and followed by adding the last two
  * numbers in the sequence
- * @k : parameter passed to the function
  * Return: Always 0 (Success)
  */
 int main(void)
