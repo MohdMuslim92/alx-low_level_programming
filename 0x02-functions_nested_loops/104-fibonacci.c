@@ -9,62 +9,46 @@
  * @k : parameter passed to the function
  * Return: Always 0 (Success)
  */
-int check_diff(int m);
-int check_diff(int m)
-{
-	long double k;
-
-	switch (m)
-	{
-		case 93:
-			k = k - 1;
-			break;
-		case 94:
-			k = k - 3;
-			break;
-		case 95:
-			k = k - 4;
-			break;
-		case 96:
-			k = k - 7;
-			break;
-		case 97:
-			k = k - 15;
-			break;
-		case 98:
-			k = k - 30;
-			break;
-		default:
-			k = k;
-	}
-}
 int main(void)
 {
-	int m = 3;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
+	unsigned long f1, f2, fib2_half1, fib2_half2;
+	unsigned long half1, half2;
 
-	long double i = 0, j = 1, k = 2;
-
-	while (i < 1000)
+	for (count = 0; count < 92; count++)
 	{
-		if (i == 0)
-			printf("%.0Lf", j);
-		else if (i == 1)
-			printf(", %.0Lf", k);
-		else
+		sum = fib1 + fib2;
+		printf("%lu, ", sum);
+
+		fib1 = fib2;
+		fib2 = sum;
+	}
+
+	f1 = fib1 / 10000000000;
+	fib2_half1 = fib2 / 10000000000;
+	f2 = fib1 % 10000000000;
+	fib2_half2 = fib2 % 10000000000;
+
+	for (count = 93; count < 99; count++)
+	{
+		half1 = f1 + fib2_half1;
+		half2 = f2 + fib2_half2;
+		if (f2 + fib2_half2 > 9999999999)
 		{
-			k += j;
-			j = k - j;
-			if (m < 99)
-			{
-				check_diff(m);
-				printf(", %.0Lf", k);
-			}
-			m++;
+			half1 += 1;
+			half2 %= 10000000000;
 		}
 
-		++i;
+		printf("%lu%lu", half1, half2);
+		if (count != 98)
+			printf(", ");
+
+		f1 = fib2_half1;
+		f2 = fib2_half2;
+		fib2_half1 = half1;
+		fib2_half2 = half2;
 	}
 	printf("\n");
-
 	return (0);
 }
