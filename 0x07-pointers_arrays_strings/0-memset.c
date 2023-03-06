@@ -2,10 +2,10 @@
 
 /**
  * _memset - memory manipulate function
- * Description: a function function fills the first n bytes
+ * Description: a function fills the first n bytes
  * of the memory area pointed to by s with the constant byte b
  * @s: pointer to the bytes passed to the function
- * @b: constant byte passed to the function (will
+ * @b: constant byte passed to the function
  * @n: bytes in the memory to be filled
  * Return: return a pointer to the memory area
  */
