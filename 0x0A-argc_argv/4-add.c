@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "main.h"
 
 /**
@@ -9,28 +10,23 @@
  * @argv: array of command line arguments passed to the main
  * Return: return 0 (success)
  */
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i, total = 0;
+	int i, j, total = 0;
 
-	if (argc >= 1)
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (atoi(argv[i]) && atoi(argv[i]) >= 0)
+			if (!isdigit(argv[i][j]))
 			{
-				total += atoi(argv[i]);
-			} else
-			{
-				printf("%s\n", "Error");
+				printf("Error\n");
 				return (1);
 			}
 		}
-		printf("%d\n", total);
-	} else
-	{
-		printf("0\n");
+		total += atoi(argv[i]);
 	}
+	printf("%i\n", total);
 	return (0);
 }
+
