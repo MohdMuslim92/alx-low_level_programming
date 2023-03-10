@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 				total += atoi(argv[i]);
 			} else
 			{
-				printf("Error\n");
+				printf("%s\n", "Error");
 				return (1);
 			}
 		}
