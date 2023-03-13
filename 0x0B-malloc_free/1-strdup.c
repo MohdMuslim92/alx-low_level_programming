@@ -19,15 +19,17 @@ char *_strdup(char *str)
 	arr = (char *) malloc(j + 1 * sizeof(str));
 	if (arr == NULL)
 		return (NULL);
-		else
+		else if(arr != NULL)
 	{
 		while (str[i] != '\0')
 		{
 			arr[i] = str[i];
 			i++;
 		}
-		arr[i] = '\0';
-		return (arr);
+	} else
+	{
+		return (NULL);
 	}
+		return (arr);
 }
 
