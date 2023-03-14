@@ -26,7 +26,7 @@ char **strtow(char *str)
 	{
 		return (NULL);
 	}
-		for (word = 0; str[word] && j < k; word++)
+		for (word = 0; str[word] && j <= k; word++)
 		{
 			count = 0;
 			if (str[word] != ' ')
