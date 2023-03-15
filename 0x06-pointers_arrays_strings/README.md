@@ -11,5 +11,6 @@
 * 100-rot13.c : a function that encode a string with [ROT13](https://en.wikipedia.org/wiki/ROT13 "ROT13")
 * 101-print_number.c : a function that prints an integer with _putchar() function
 * 102-magic.c : manipulate array with pointer that replace all it's elements by one value
+* 103-infinite_add.c : a function that adds two numbers
 * 104-print_buffer.c : Function that print the buffer size
 
