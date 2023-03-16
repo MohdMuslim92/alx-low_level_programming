@@ -11,14 +11,10 @@ void *malloc_checked(unsigned int b)
 {
 	int *arr;
 
-	arr = (int *) malloc(1 * sizeof(b));
-	if (b == INT_MAX)
+	arr = (int *)malloc(b);
+	if (arr == NULL)
 	{
-		exit (98);
-	} else
-	{
-			arr[0] = b;
-		return (arr);
+		exit(98);
 	}
+	return (arr);
 }
-
