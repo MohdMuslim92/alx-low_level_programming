@@ -8,9 +8,9 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *arr;
+	void *arr;
 
-	arr = (int *)malloc(b);
+	arr = malloc(b);
 	if (arr == NULL)
 	{
 		exit(98);
