@@ -13,6 +13,7 @@
 int main(int argc, char **argv)
 {
 	int i, j;
+
 	long double total = 1;
 
 	if (argc != 3)
@@ -27,7 +28,7 @@ int main(int argc, char **argv)
 			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
-				exit (98);
+				exit(98);
 			}
 		}
 	}
