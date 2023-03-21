@@ -27,7 +27,24 @@ here you will found scripts written in C programming language that may cover eve
      * [100-print_comb3.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x01-variables_if_else_while/100-print_comb3.c "100-print_comb3.c") : print all possible different combinations of two digits
      * [101-print_comb4.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x01-variables_if_else_while/101-print_comb4.c "101-print_comb4.c") : print all possible different combinations of three digits
      * [102-print_comb5.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x01-variables_if_else_while/102-print_comb5.c "102-print_comb5.c") : print all possible combinations of two two-digit numbers
-## * 0x02-functions_nested_loops
+* ## [0x02. C - Functions, nested loops](https://github.com/MohdMuslim92/alx-low_level_programming/tree/master/0x02-functions_nested_loops "0x02. C - Functions, nested loops") : dealing with nested loops, functions and header files
+   * 
+     * [0-putchar.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/0-putchar.c "0-putchar.c") : print _putchar
+     * [1-alphabet.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/1-alphabet.c "1-alphabet.c") : function that prints the alphabet, in lowercase
+     * [2-print_alphabet_x10.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/2-print_alphabet_x10.c "2-print_alphabet_x10.c") : function that prints 10 times the alphabet, in lowercase
+     * [3-islower.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/3-islower.c "3-islower.c") : function that checks for lowercase character
+     * [4-isalpha.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/4-isalpha.c "4-isalpha.c") : function that checks for alphabetic character
+     * [5-sign.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/5-sign.c "5-sign.c") : function that prints the sign of a number
+     * [6-abs.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/6-abs.c "6-abs.c") : function that computes the absolute value of an integer
+     * [7-print_last_digit.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/7-print_last_digit.c "7-print_last_digit.c") : function that prints the last digit of a number
+     * [8-24_hours.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/8-24_hours.c "8-24_hours.c") : function that prints every minute of the day
+     * [9-times_table.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/9-times_table.c "9-times_table.c") : function that prints the 9 times table, starting with 0
+     * [10-add.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/10-add.c "10-add.c") : function that adds two integers and returns the result
+     * [11-print_to_98.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/11-print_to_98.c "11-print_to_98.c") : function that prints all natural numbers from n to 98
+     * [101-natural.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/101-natural.c "101-natural.c") : compute sum of multiples of 3 or 5 below 1024
+     * [102-fibonacci.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/102-fibonacci.c "102-fibonacci.c") : print the first 50 Fibonacci numbers, starting with 1 and 2
+     * [103-fibonacci.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/103-fibonacci.c "103-fibonacci.c") : print the sum of Fibonacci sequence that do not exeed 4000,000
+     * [104-fibonacci.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/104-fibonacci.c "104-fibonacci.c") : print the first 98 Fibonacci numbers, starting with 1 and 2
 ## * 0x03-debugging
 ## * 0x04-more_functions_nested_loops
 ## * 0x05-pointers_arrays_strings
