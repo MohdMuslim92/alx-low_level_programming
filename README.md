@@ -12,7 +12,7 @@ here you will found scripts written in C programming language that may cover eve
      * [6-size.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x00-hello_world/6-size.c "6-size.c") : prints the size of various types
      * [100-intel](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x00-hello_world/100-intel "100-intel") : generates the assembly code (Intel syntax)  and save it to a file
      * [101-quote.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x00-hello_world/101-quote.c "101-quote.c") : print a sentence
-* ## [0x01. C - Variables, if, else, while](https://github.com/MohdMuslim92/alx-low_level_programming/tree/master/0x01-variables_if_else_while "0x01. C - Variables, if, else, while") : dealing with loops and other printing functions
+* ## [0x01. C - Variables, if, else, while](https://github.com/MohdMuslim92/alx-low_level_programming/tree/master/0x01-variables_if_else_while "0x01. C - Variables, if, else, while") : loops and other printing functions
    * 
      * [0-positive_or_negative.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x01-variables_if_else_while/0-positive_or_negative.c "0-positive_or_negative.c") : decide if the random number is positive or negative
      * [1-last_digit.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x01-variables_if_else_while/1-last_digit.c "1-last_digit.c") : print last digit of a random number
@@ -27,7 +27,7 @@ here you will found scripts written in C programming language that may cover eve
      * [100-print_comb3.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x01-variables_if_else_while/100-print_comb3.c "100-print_comb3.c") : print all possible different combinations of two digits
      * [101-print_comb4.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x01-variables_if_else_while/101-print_comb4.c "101-print_comb4.c") : print all possible different combinations of three digits
      * [102-print_comb5.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x01-variables_if_else_while/102-print_comb5.c "102-print_comb5.c") : print all possible combinations of two two-digit numbers
-* ## [0x02. C - Functions, nested loops](https://github.com/MohdMuslim92/alx-low_level_programming/tree/master/0x02-functions_nested_loops "0x02. C - Functions, nested loops") : dealing with nested loops, functions and header files
+* ## [0x02. C - Functions, nested loops](https://github.com/MohdMuslim92/alx-low_level_programming/tree/master/0x02-functions_nested_loops "0x02. C - Functions, nested loops") : nested loops, functions and header files
    * 
      * [0-putchar.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/0-putchar.c "0-putchar.c") : print _putchar
      * [1-alphabet.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/1-alphabet.c "1-alphabet.c") : function that prints the alphabet, in lowercase
@@ -45,7 +45,12 @@ here you will found scripts written in C programming language that may cover eve
      * [102-fibonacci.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/102-fibonacci.c "102-fibonacci.c") : print the first 50 Fibonacci numbers, starting with 1 and 2
      * [103-fibonacci.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/103-fibonacci.c "103-fibonacci.c") : print the sum of Fibonacci sequence that do not exeed 4000,000
      * [104-fibonacci.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x02-functions_nested_loops/104-fibonacci.c "104-fibonacci.c") : print the first 98 Fibonacci numbers, starting with 1 and 2
-## * 0x03-debugging
+* ## [0x03. C - Debugging](https://github.com/MohdMuslim92/alx-low_level_programming/tree/master/0x03-debugging "0x03. C - Debugging") 
+   * 
+     * [0-main.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x03-debugging/0-main.c "0-main.c") : test that the function positive_or_negative() gives the correct output when given a case of 0
+     * [1-main.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x03-debugging/1-main.c "1-main.c") : Commenting out the part of the code that causing the output to go into an infinite loop
+     * [2-print_alphabet_x10.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x03-debugging/2-largest_number.c "2-print_alphabet_x10.c") : Fix the code in [2-largest_number_faulty.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x03-debugging/2-largest_number_faulty.c "faulty file") so that it correctly prints out the largest of three numbers, no matter the case
+     * [3-print_remaining_days.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x03-debugging/3-print_remaining_days.c "3-print_remaining_days.c") : Fix the print_remaining_days() function that in file [3-print_remaining_days_faulty.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x03-debugging/3-print_remaining_days_faulty.c "faulty file") so that the output works correctly for all dates and all leap years
 ## * 0x04-more_functions_nested_loops
 ## * 0x05-pointers_arrays_strings
 ## * 0x06-pointers_arrays_strings
