@@ -80,4 +80,19 @@ here you will found scripts written in C programming language that may cover eve
      * [9-strcpy.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/9-strcpy.c "9-strcpy.c") : function copies the string pointed to by src, to the buffer pointed to by dest
      * [100-atoi.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/100-atoi.c "100-atoi.c") : function convert a string to an integer
      * [101-keygen.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/101-keygen.c "101-keygen.c") : program that generates random valid passwords for the program [101-crackme](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/101-crackme "101-crackme")
-## * 0x06-pointers_arrays_strings
+* ## [0x06. C - More pointers, arrays and strings](https://github.com/MohdMuslim92/alx-low_level_programming/tree/master/0x06-pointers_arrays_strings "0x06. C - More pointers, arrays and strings")
+   * 
+     * [0-strcat.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/0-strcat.c "0-strcat.c") : function concatenates two strings
+     * [1-strncat.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/1-strncat.c "1-strncat.c") : function concatenates n characters from a string with another one
+     * [2-strncpy.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/2-strncpy.c "2-strncpy.c") : function  copies n characters from a string to another one
+     * [3-strcmp.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/3-strcmp.c "3-strcmp.c") : function compares two strings
+     * [4-rev_array.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/4-rev_array.c "4-rev_array.c") : function reverses the content of an array of integers
+     * [5-string_toupper.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/5-string_toupper.c "5-string_toupper.c") : function changes all lowercase letters of a string to uppercase
+     * [6-cap_string.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/6-cap_string.c "6-cap_string.c") : function capitalizes all words of a string
+     * [7-leet.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/7-leet.c "7-leet.c") : function encodes a string into [1337](https://en.wikipedia.org/wiki/Leet "Leet Speak")
+     * [100-rot13.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/100-rot13.c "100-rot13.c") : function that encodes a string using [ROT13](https://en.wikipedia.org/wiki/ROT13 "ROT13")
+     * [101-print_number.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/101-print_number.c "101-print_number.c") : function prints an integer
+     * [102-magic.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/102-magic.c "102-magic.c") : edit the [magic.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/magic.c "magic.c") file so that the program prints a[2] = 98 
+     * [103-infinite_add.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/103-infinite_add.c "103-infinite_add.c") : function adds two numbers
+     * [104-print_buffer.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/104-print_buffer.c "104-print_buffer.c") : function prints a buffer
+
