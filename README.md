@@ -1,7 +1,7 @@
 # **Programming with C**    
 
 here you will found scripts written in C programming language that may cover everything about C I hope
-* ##[0x00. C - Hello, World](https://github.com/MohdMuslim92/alx-low_level_programming/tree/master/0x00-hello_world "0x00. C - Hello, World") : printing and compiling    
+* ## [0x00. C - Hello, World](https://github.com/MohdMuslim92/alx-low_level_programming/tree/master/0x00-hello_world "0x00. C - Hello, World") : printing and compiling    
        * [0-preprocessor](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x00-hello_world/0-preprocessor "0-preprocessor") : run through preprocesser and save result in a file
        * [1-compiler](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x00-hello_world/1-compiler "1-compiler") : compile but do not link
        * [2-assembler](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x00-hello_world/2-assembler "2-assembler") : generates the assembly code and save it to a file
