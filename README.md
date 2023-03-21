@@ -66,5 +66,18 @@ here you will found scripts written in C programming language that may cover eve
      * [10-print_triangle.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/10-print_triangle.c "10-print_triangle.c") : function prints a triangle
      * [100-prime_factor.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/100-prime_factor.c "100-prime_factor.c") : program finds and prints the largest prime factor of the number 612852475143
      * [101-print_number.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/101-print_number.c "101-print_number.c") : function prints an integer
-## * 0x05-pointers_arrays_strings
+* ## [0x05. C - Pointers, arrays and strings](https://github.com/MohdMuslim92/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings "0x05. C - Pointers, arrays and strings")
+   * 
+     * [0-reset_to_98.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/0-reset_to_98.c "0-reset_to_98.c") : function takes a pointer to an int as parameter and updates the value it points to to 98
+     * [1-swap.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/1-swap.c "1-swap.c") : function swaps the values of two integers
+     * [2-strlen.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/2-strlen.c "2-strlen.c") : function returns the length of a string
+     * [3-puts.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/3-puts.c "3-puts.c") : function prints a string
+     * [4-print_rev.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/4-print_rev.c "4-print_rev.c") : function prints a string, in reverse
+     * [5-rev_string.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/5-rev_string.c "5-rev_string.c") : function reverses a string
+     * [6-puts2.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/6-puts2.c "6-puts2.c") : function prints every other character of a string, starting with the first character
+     * [7-puts_half.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/7-puts_half.c "7-puts_half.c") : function prints second half of a string
+     * [8-print_array.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/8-print_array.c "8-print_array.c") : function prints n elements of an array of integers
+     * [9-strcpy.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/9-strcpy.c "9-strcpy.c") : function copies the string pointed to by src, to the buffer pointed to by dest
+     * [100-atoi.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/100-atoi.c "100-atoi.c") : function convert a string to an integer
+     * [101-keygen.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/101-keygen.c "101-keygen.c") : program that generates random valid passwords for the program [101-crackme](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/101-crackme "101-crackme")
 ## * 0x06-pointers_arrays_strings
