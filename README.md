@@ -51,6 +51,20 @@ here you will found scripts written in C programming language that may cover eve
      * [1-main.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x03-debugging/1-main.c "1-main.c") : Commenting out the part of the code that causing the output to go into an infinite loop
      * [2-print_alphabet_x10.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x03-debugging/2-largest_number.c "2-print_alphabet_x10.c") : Fix the code in [2-largest_number_faulty.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x03-debugging/2-largest_number_faulty.c "faulty file") so that it correctly prints out the largest of three numbers, no matter the case
      * [3-print_remaining_days.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x03-debugging/3-print_remaining_days.c "3-print_remaining_days.c") : Fix the print_remaining_days() function that in file [3-print_remaining_days_faulty.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x03-debugging/3-print_remaining_days_faulty.c "faulty file") so that the output works correctly for all dates and all leap years
-## * 0x04-more_functions_nested_loops
+* ## [0x04. C - More functions, more nested loops](https://github.com/MohdMuslim92/alx-low_level_programming/tree/master/0x04-more_functions_nested_loops "0x04. C - More functions, more nested loops") : nested loops, functions and header files
+   * 
+     * [0-isupper.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/0-isupper.c "0-isupper.c") : function checks for uppercase character
+     * [1-isdigit.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/1-isdigit.c "1-isdigit.c") : function checks for a digit
+     * [2-mul.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/2-mul.c "2-mul.c") : function multiplies two integers
+     * [3-print_numbers.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/3-print_numbers.c "3-print_numbers.c") : function prints the numbers, from 0 to 9
+     * [4-print_most_numbers.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/4-print_most_numbers.c "4-print_most_numbers.c") : function prints the numbers, from 0 to 9 except 2 and 4
+     * [5-more_numbers.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/5-more_numbers.c "5-more_numbers.c") : function prints 10 times the numbers, from 0 to 14
+     * [6-print_line.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/6-print_line.c "6-print_line.c") : function draws a straight line in the terminal
+     * [7-print_diagonal.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/7-print_diagonal.c "7-print_diagonal.c") : function draws a diagonal line on the terminal
+     * [8-print_square.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/8-print_square.c "8-print_square.c") : function prints a square
+     * [9-fizz_buzz.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/9-fizz_buzz.c "9-fizz_buzz.c") : program prints numbers from 1 to 100, But for multiples of 3 print Fizz, and for the multiples of 5 print Buzz. For multiples of both 5 and 5 print FizzBuzz
+     * [10-print_triangle.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/10-print_triangle.c "10-print_triangle.c") : function prints a triangle
+     * [100-prime_factor.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/100-prime_factor.c "100-prime_factor.c") : program finds and prints the largest prime factor of the number 612852475143
+     * [101-print_number.c](https://github.com/MohdMuslim92/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/101-print_number.c "101-print_number.c") : function prints an integer
 ## * 0x05-pointers_arrays_strings
 ## * 0x06-pointers_arrays_strings
