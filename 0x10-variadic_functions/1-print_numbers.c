@@ -2,9 +2,8 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * print_numbers - sum function
- * DESCRIPTION: a function that returns the sum of
- * all its parameters
+ * print_numbers - print function
+ * DESCRIPTION: a function that prints numbers
  * @separator: a pointer for a string to be printed
  * between numbers
  * @n: number of parameters passed to the function

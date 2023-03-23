@@ -4,7 +4,7 @@
  * sum_them_all - sum function
  * DESCRIPTION: a function that returns the sum of
  * all its parameters
- * @n: first parameter
+ * @n: number of parameters
  * @: the result
  * Return: the result of the addition
  */
