@@ -3,9 +3,9 @@
 #include <string.h>
 #include "lists.h"
 /**
- * add_node - print length function
+ * add_node - add node function
  * DESCRIPTION: a function that add a new node
- * to the linked list
+ * at the first of a linked list
  * @head: pointer to node passed to the function
  * @str: pointer the string passed to the function
  * Return: a pointer to the new element
