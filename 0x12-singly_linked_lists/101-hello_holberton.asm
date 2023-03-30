@@ -1,14 +1,21 @@
-section .data
-string db "Hello, Holberton", 10
-len equ $ - string
+extern printf
 
 section .text
 global main
+
 main:
-    mov edx, len
-    mov ecx, string
-    mov ebx, 1
-    mov eax, 4
-    int 0x80
-    mov eax, 1
-    int 0x80
+push rbp
+
+mov rdi,fmt
+mov rsi,msg
+mov rax,0
+call printf
+
+pop rbp
+
+mov rax,0
+ret
+
+section .data
+msg: db "Hello, Holberton", 0
+fmt: db "%s", 10, 0
