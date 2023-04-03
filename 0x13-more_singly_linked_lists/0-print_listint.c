@@ -3,7 +3,7 @@
 #include "lists.h"
 /**
  * print_listint - print function
- * DESCRIPTION: a function that prints a linked list
+ * DESCRIPTION: a function that prints a linked list elements
  * @h: pointer passed to the function
  * Return: number of nodes printed
  */
@@ -21,3 +21,4 @@ size_t print_listint(const listint_t *h)
 
 	return (count);
 }
+
