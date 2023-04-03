@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * size_t print_listint - print function
+ * print_listint - print function
  * DESCRIPTION: a function that prints a linked list
  * @h: pointer passed to the function
  * Return: number of nodes printed
