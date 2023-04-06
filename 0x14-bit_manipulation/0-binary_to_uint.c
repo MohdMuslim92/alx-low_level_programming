@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
 /**
  * binary_to_uint - convert function
@@ -12,7 +11,6 @@ unsigned int binary_to_uint(const char *b)
 {
 	int i, j, k;
 	unsigned int num = 0;
-	/*int arr[] = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024};*/
 
 	if (!b || !*b)
 		return (0);
