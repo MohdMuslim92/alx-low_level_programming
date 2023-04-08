@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include <sys/stat.h>
-
 int copy_file(const char *from_path, const char *to_path);
 
 /**
@@ -26,7 +26,6 @@ int main(int argc, char **argv)
 
 	return (result);
 }
-
 /**
  * copy_file - copy file to file
  * DESCRIPTION: a function that copies the content of a file
@@ -40,11 +39,8 @@ int copy_file(const char *from_path, const char *to_path)
 	FILE *from = fopen(from_path, "r");
 	FILE *to = fopen(to_path, "w");
 	char buffer[1024];
-	int write, close, count;
-	int cmd;
+	int write, count, close, stat_file;
 	struct stat st;
-	int stat_file = stat(to_path, &st);
-	mode_t mode = 0664;
 
 	if (from == NULL)
 	{
@@ -57,6 +53,16 @@ int copy_file(const char *from_path, const char *to_path)
 		fprintf(stderr, "Error: Can't write to %s\n", to_path);
 		fclose(from);
 		return (99);
+	}
+	if (access(to_path, F_OK) != -1)
+	{
+		if (truncate(to_path, 0) != 0)
+		{
+			fprintf(stderr, "Error: Can't truncate %s\n", to_path);
+			fclose(from);
+			fclose(to);
+			return (99);
+		}
 	}
 
 	while (!feof(from))
@@ -74,31 +80,33 @@ int copy_file(const char *from_path, const char *to_path)
 			}
 		}
 	}
-
 	close = fclose(from);
 	if (close != 0)
 	{
-		fprintf(stderr, "Error: Can't close fd %s", from_path);
+		fprintf(stderr, "Error: Can't close fd %d\n", fileno(from));
 		fclose(to);
 		return (100);
 	}
-
 	close = fclose(to);
 	if (close != 0)
 	{
-		fprintf(stderr, "Error: Can't close fd %s", to_path);
+		fprintf(stderr, "Error: Can't close fd %d\n", fileno(to));
 		return (100);
 	}
 
+	stat_file = stat(to_path, &st);
 	if (stat_file == 0)
 	{
-		mode = st.st_mode & 0777;
+		mode_t mode = st.st_mode & 0777;
+
+		mode |= S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
+		if (chmod(to_path, mode) != 0)
+		{
+			fprintf(stderr, "Error: Can't set permissions for %s\n", to_path);
+			return (-1);
+		}
 	}
-	cmd = chmod(to_path, mode);
-	if (cmd == -1)
-	{
-		return (-1);
-	}
+
 	return (0);
 }
 
