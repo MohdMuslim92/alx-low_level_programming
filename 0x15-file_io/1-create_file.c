@@ -13,13 +13,13 @@ int create_file(const char *filename, char *text_content)
 {
 	FILE *fp;
 	int cmd;
-	mode_t mode = S_IRUSR | S_IWUSR;
+	mode_t mode = 0600;
 
 	if (filename == NULL)
 		return (-1);
 	if (text_content == NULL)
-		text_content = '\0';
-	fp = fopen(filename, "w+");
+		text_content = "";
+	fp = fopen(filename, "w");
 	if (fp == NULL)
 		return (-1);
 	fprintf(fp, "%s", text_content);
