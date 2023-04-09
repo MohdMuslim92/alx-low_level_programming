@@ -9,8 +9,8 @@ int copy_file(const char *from_path, const char *to_path);
  * main - Entry point
  * DESCRIPTION: a program that copies the content of a file
  * to another file
- * @argc: name of the file to be created
- * @argv: a NULL terminated string to write to the file
+ * @argc: number of command line arguments passed to the program
+ * @argv: arguments passed through command line
  * Return: 1 on success, -1 on failure
  */
 int main(int argc, char **argv)
