@@ -11,29 +11,42 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t count = 0, i;
-	char *size = malloc(sizeof(size_t) * (letters + 1));
+	ssize_t count = 0;
+	char *size = malloc(sizeof(char) * (letters + 1));
 	FILE *fp;
 
 	if (filename == NULL)
 		return (0);
+
 	if (size == NULL)
 		return (0);
+
 	fp = fopen(filename, "r");
 	if (fp == NULL)
 	{
 		free(size);
 		return (0);
 	}
+
 	count = fread(size, sizeof(char), letters, fp);
-	if (count > 0)
+	if (count == -1)
 	{
-		size[count] = '\0';
-		for (i = 0; i < count; i++)
-			_putchar(size[i]);
+		free(size);
+		fclose(fp);
+		return (0);
 	}
+
+	size[count] = '\0';
+	if (fwrite(size, sizeof(char), (size_t)count, stdout) != (size_t)count)
+	{
+		free(size);
+		fclose(fp);
+		return (0);
+	}
+
 	fclose(fp);
 	free(size);
+
 	return (count);
 }
 
