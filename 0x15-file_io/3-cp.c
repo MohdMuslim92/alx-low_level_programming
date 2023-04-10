@@ -45,14 +45,14 @@ int copy_file(const char *from_path, const char *to_path)
 	if (from == NULL)
 	{
 		fprintf(stderr, "Error: Can't read from file %s\n", from_path);
-		return (98);
+		exit(98);
 	}
 
 	if (to == NULL)
 	{
 		fprintf(stderr, "Error: Can't write to %s\n", to_path);
 		fclose(from);
-		return (99);
+		exit(99);
 	}
 	if (access(to_path, F_OK) != -1)
 	{
@@ -61,7 +61,7 @@ int copy_file(const char *from_path, const char *to_path)
 			fprintf(stderr, "Error: Can't truncate %s\n", to_path);
 			fclose(from);
 			fclose(to);
-			return (99);
+			exit(99);
 		}
 	}
 
@@ -76,7 +76,7 @@ int copy_file(const char *from_path, const char *to_path)
 				fprintf(stderr, "Error: Can't write to %s\n", to_path);
 				fclose(from);
 				fclose(to);
-				return (99);
+				exit(99);
 			}
 		}
 	}
@@ -85,13 +85,13 @@ int copy_file(const char *from_path, const char *to_path)
 	{
 		fprintf(stderr, "Error: Can't close fd %d\n", fileno(from));
 		fclose(to);
-		return (100);
+		exit(100);
 	}
 	close = fclose(to);
 	if (close != 0)
 	{
 		fprintf(stderr, "Error: Can't close fd %d\n", fileno(to));
-		return (100);
+		exit(100);
 	}
 
 	stat_file = stat(to_path, &st);
