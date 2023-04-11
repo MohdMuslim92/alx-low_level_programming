@@ -4,6 +4,11 @@
 #include <unistd.h>
 #include <string.h>
 #include <elf.h>
+
+/* Function prototypes */
+int read_elf_header(char *filename, Elf64_Ehdr *ehdr);
+void print_elf_header(Elf64_Ehdr ehdr);
+
 /**
  * main - Entry point
  * DESCRIPTION: a program that displays the information contained
@@ -12,42 +17,71 @@
  * @argv: arguments passed through command line
  * Return: 0 for success
  */
-
 int main(int argc, char **argv)
 {
-	int fd = open(argv[1], O_RDONLY);
-	int i;
 	Elf64_Ehdr ehdr;
-	ssize_t n = read(fd, &ehdr, sizeof(ehdr));
-	char space[] = "                             ";
 
 	if (argc != 2)
 	{
 		fprintf(stderr, "Usage: %s elf_filename\n", argv[0]);
 		exit(98);
 	}
+	if (read_elf_header(argv[1], &ehdr) == -1)
+	{
+		fprintf(stderr, "Error: unable to read ELF header\n");
+		exit(98);
+	}
+	print_elf_header(ehdr);
+	return (0);
+}
+
+/**
+ * read_elf_header - Reads the ELF header from a file.
+ * @filename: The name of the file to read from.
+ * @ehdr: A pointer to a buffer to store the ELF header in.
+ * Return: 0 for success, -1 for failure.
+ */
+int read_elf_header(char *filename, Elf64_Ehdr *ehdr)
+{
+	int fd = open(filename, O_RDONLY);
+	ssize_t n;
 
 	if (fd == -1)
 	{
 		perror("open");
-		exit(98);
+		return (-1);
 	}
-
+	n = read(fd, ehdr, sizeof(*ehdr));
 	if (n == -1)
 	{
 		perror("read");
-		exit(98);
+		close(fd);
+		return (-1);
 	}
-	if ((unsigned long int)n < sizeof(ehdr))
+	if ((unsigned long int)n < sizeof(*ehdr))
 	{
-		fprintf(stderr, "%s: file too short\n", argv[1]);
-		exit(98);
+		fprintf(stderr, "%s: file too short\n", filename);
+		close(fd);
+		return (-1);
 	}
-	if (memcmp(ehdr.e_ident, ELFMAG, SELFMAG) != 0)
+	if (memcmp(ehdr->e_ident, ELFMAG, SELFMAG) != 0)
 	{
-		fprintf(stderr, "%s: not an ELF file\n", argv[1]);
-		exit(98);
+		fprintf(stderr, "%s: not an ELF file\n", filename);
+		close(fd);
+		return (-1);
 	}
+	close(fd);
+	return (0);
+}
+
+/**
+ * print_elf_header - Prints the ELF header to standard output.
+ * @ehdr: The ELF header to print.
+ */
+void print_elf_header(Elf64_Ehdr ehdr)
+{
+	int i;
+	char space[] = "                             ";
 
 	printf("Magic:   ");
 	for (i = 0; i < EI_NIDENT; i++)
@@ -55,10 +89,12 @@ int main(int argc, char **argv)
 		printf("%02x ", ehdr.e_ident[i]);
 	}
 	printf("\n");
-
-	printf("Class:%s%s\n", space, ehdr.e_ident[EI_CLASS] == ELFCLASS64 ? "ELF64" : "ELF32");
-	printf("Data:%s%s\n", space, ehdr.e_ident[EI_DATA] == ELFDATA2LSB ? "2's complement, little endian" : "2's complement, big endian");
+	printf("Class:%s%s\n",
+			space, ehdr.e_ident[EI_CLASS] == ELFCLASS64 ? "ELF64" : "ELF32");
+	printf("Data:%s%s\n", space,
+			ehdr.e_ident[EI_DATA] == ELFDATA2LSB ? "2's complement, little endian" :
+			"2's complement, big endian");
 	printf("Version:%s%d (current)\n", space, ehdr.e_ident[EI_VERSION]);
 	printf("ABI Version:%s%d\n", space, ehdr.e_ident[EI_ABIVERSION]);
-	return (0);
 }
+
