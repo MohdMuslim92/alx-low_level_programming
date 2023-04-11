@@ -42,7 +42,8 @@ int copy_file(const char *from_path, const char *to_path)
 	FILE *to = fopen(to_path, "w");
 	char buffer[1024];
 	size_t count;
-	int write, close, stat_file;
+	int stat_file;
+	ssize_t write, close;
 	struct stat st;
 
 	if (from == NULL)
