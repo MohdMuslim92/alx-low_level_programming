@@ -1,0 +1,27 @@
+#!/usr/bin/python3
+palindrome = []
+divided_by = []
+final_result = {}
+i = 0
+for num1 in range(111, 999 + 1):
+    for num2 in range(111, 999 + 1):
+        multiply = num1 * num2
+        reversed_num = int(str(multiply)[::-1])
+        if multiply == reversed_num:
+            palindrome.append(multiply)
+            divided_by.append(num2)
+palindrome.sort()
+divided_by.sort()
+pal_short_list = palindrome[-11:-1]
+div_short_list = divided_by[-11:-1]
+for pal in pal_short_list:
+    final_result[pal] = (div_short_list[i], int(pal / div_short_list[i]))
+    i += 1
+pal_num = palindrome[-1]
+mul_num1 = divided_by[-1]
+mul_num2 = pal_num // mul_num1
+print("Top 6 largest palindrome : ")
+for key, value in final_result.items():
+    print(key, value)
+print("Largest palindrome from a product of two numbers of 3 digits is :")
+print("{} = {} * {}".format(pal_num, mul_num1, mul_num2))
